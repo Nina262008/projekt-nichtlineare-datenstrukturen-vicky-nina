@@ -1,0 +1,17 @@
+public class Kinoprogramm  {
+  
+  private String name;
+  private int laufzeit;
+  private int preis;
+  private int naechsteVorstellung;
+  private int altersfreigabe;
+  
+  public String getName(){
+    return this.name;
+    }
+  
+  
+  
+  
+  
+  }
