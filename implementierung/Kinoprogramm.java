@@ -1,29 +1,15 @@
-public class Kinoprogramm  {
-  
-  private String name;
-  private int laufzeit;
-  private int preis;
-  private int naechsteVorstellung;
-  private int altersfreigabe;
-  
-  public String getName(){
-    return this.name;
+public class Kinoprogramm {
+
+  public static void traverse(BinarySearchTree<Film> pBst)
+    {
+        if(pBst.getLeftTree().getContent() != null)
+        {
+            traverse(pBst.getLeftTree());
+        }
+        System.out.println("Name : " + pBst.getContent().getName() + ", Laufzeit: " + pBst.getContent().getLaufzeit());
+        if(pBst.getRightTree().getContent() != null)
+        {
+            traverse(pBst.getRightTree());
+        }
     }
-  
-  public int getLaufzeit(){
-    return this.laufzeit;
-    }
-    
-  public int getPreis(){
-    return this.Preis;
-    } 
-    
-  public int getNaechsteVorstellung(){
-    return this.naechsteVorstellung;
-    }  
-  
-  public int getAltersfreigabe(){
-    return this.altersfreigabe;
-    }
-  
   }
